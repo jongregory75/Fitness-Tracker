@@ -40,7 +40,7 @@ router.get("/api/workouts/range", (req, res) => {
 
 
 router.get("/api/workouts", (req, res) => {
-    res.sendFile(path.join(__dirname + "/public/exercise.html"));
+    res.sendFile(path.join(__dirname + "../public/exercise.html"));
 });
 
 router.post("/api/workouts", (req, res) => {
