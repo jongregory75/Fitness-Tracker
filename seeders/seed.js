@@ -10,9 +10,9 @@ mongoose.connect("mongodb://localhost/workout", {
 const workoutSeed = [
   {
     day: new Date(new Date().setDate(new Date().getDate() - 10)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Back Squat',
         duration: 20,
         weight: 275,
@@ -23,9 +23,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 10)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Quad Extension',
         duration: 20,
         weight: 125,
@@ -36,9 +36,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 10)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Farmer Carry',
         duration: 20,
         weight: 280,
@@ -49,9 +49,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 7)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Bench Press',
         duration: 25,
         weight: 295,
@@ -62,9 +62,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 7)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Cable Face Pulls',
         duration: 25,
         weight: 16,
@@ -75,9 +75,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 7)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Incline Dumbell Bench Press',
         duration: 20,
         weight: 200,
@@ -88,9 +88,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 7)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Dumbell flys',
         duration: 20,
         weight: 160,
@@ -101,9 +101,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 4)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Deadlift',
         duration: 30,
         weight: 355,
@@ -114,9 +114,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 4)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Reverse Hyper',
         duration: 20,
         weight: 160,
@@ -127,9 +127,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 4)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Hip Sled',
         duration: 20,
         weight: 600,
@@ -140,9 +140,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 4)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Planks',
         duration: 60,
         weight: 250,
@@ -153,9 +153,9 @@ const workoutSeed = [
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 1)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Standing Barbell Military Press',
         duration: 20,
         weight: 155,
@@ -165,9 +165,9 @@ const workoutSeed = [
     ],
   },{
     day: new Date(new Date().setDate(new Date().getDate() - 1)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Sumo High Pulls',
         duration: 20,
         weight: 155,
@@ -177,9 +177,9 @@ const workoutSeed = [
     ],
   },{
     day: new Date(new Date().setDate(new Date().getDate() - 1)),
-    exercise: [
+    exercises: [
       {
-        exType: 'resistance',
+        type: 'resistance',
         name: 'Skull crushers',
         duration: 20,
         weight: 115,
