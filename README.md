@@ -16,6 +16,6 @@ To deploy an application with a MongoDB database to Heroku, you'll need to set u
 
 ## Links
 
-* Deployed:  
+* Deployed: https://whispering-stream-85755.herokuapp.com/
 
-* GitHub Repository: 
+* GitHub Repository: https://github.com/jongregory75/Fitness-Tracker
