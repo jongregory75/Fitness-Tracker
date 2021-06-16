@@ -5,6 +5,8 @@ const path = require("path");
 const db = require("./models");
 
 const PORT = process.env.PORT || 3001
+//mongo cloud atlas info
+//mongo "mongodb+srv://cluster0.udj22.mongodb.net/myFirstDatabase" --username dbUser
 
 //Express setup info
 const app = express();
