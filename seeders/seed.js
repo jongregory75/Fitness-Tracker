@@ -1,19 +1,13 @@
 const mongoose = require('mongoose');
 const db = require('../models/');
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
-// // var MONGODB_URI = mongodb+srv://dbUser:Ammo1975!@#$@cluster0.udj22.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-mongoose.connect( MONGODB_URI, {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
-}
-);
+const PORT = process.env.PORT || 3001
 
-// mongoose.connect("mongodb://localhost/workout", {
-//   
-//   useFindAndModify: false,
-//   useUnifiedTopology: true,
-// });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true,
+});
 
 const workoutSeed = [
   {
