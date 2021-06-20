@@ -5,7 +5,6 @@ const path = require("path");
 const db = require("./models");
 
 const PORT = process.env.PORT || 3001
-//mongo cloud atlas info
 
 //Express setup info
 const app = express();
@@ -23,6 +22,10 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useUnifiedTopology: true,
   useFindAndModify: false,
   useCreateIndex: true,
+});
+
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
 });
 
 //route is GET /api/workouts
@@ -90,22 +93,4 @@ app.get("/stats", function (req, res) {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
-});
 
