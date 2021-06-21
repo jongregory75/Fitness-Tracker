@@ -17,7 +17,7 @@ const router = require("express").Router();
 module.exports = app;
 
 //Mongoose connection info
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
@@ -73,7 +73,7 @@ app.put("/api/workouts/:id", (req,res)=>{
 
 //route is POST/Create  //api/workouts
 app.post("/api/workouts", (req, res) => {
-  Workout.create({})
+  db.Workout.create({})
     .then((workout) => {
       res.json(workout);
     })
